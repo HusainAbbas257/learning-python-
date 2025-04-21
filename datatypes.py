@@ -36,7 +36,7 @@ print(x - y)    # Subtraction: 11
 print(x * y)    # Multiplication: 60
 print(x / y)    # Division: 3.75
 print(x // y)   # Floor Division: 3
-print(x % y)    # Modulus: 3 (remainder)
+print(x % y)    # Modulus: 3
 print(x ** y)   # Exponentiation: 15^4 = 50625
 
 # Comparison Operators
@@ -47,17 +47,35 @@ print(x != y)   # Not equal to: True
 print(x >= y)   # Greater than or equal to: True
 print(x <= y)   # Less than or equal to: False
 
-# Logical Operators
+# Logical Operators with Truth Table
 a = True
 b = False
 
-print(a and b)  # Logical AND: False
-print(a or b)   # Logical OR: True
-print(not a)    # Logical NOT: False
+# Truth Table for Logical AND
+# A       B       A and B
+# True    True    True
+# True    False   False
+# False   True    False
+# False   False   False
+print(a and b)  # False
+
+# Truth Table for Logical OR
+# A       B       A or B
+# True    True    True
+# True    False   True
+# False   True    True
+# False   False   False
+print(a or b)   # True
+
+# Truth Table for Logical NOT
+# A       not A
+# True    False
+# False   True
+print(not a)    # False
 
 # Assignment Operators
 z = 10
-z += 5          # Equivalent to z = z + 5 → z = 15
+z += 5          # z = z + 5 → z = 15
 print(z)
 
 z *= 2          # z = z * 2 → z = 30
@@ -72,13 +90,66 @@ print(z)
 z %= 3          # z = z % 3 → z = 2.0
 print(z)
 
-# Bitwise Operators
+# Bitwise Operators with Truth Table
 p = 5           # Binary: 0101
 q = 3           # Binary: 0011
+
+# Truth Table for Bitwise AND (&)
+# A   B   A & B
+# 0   0     0
+# 0   1     0
+# 1   0     0
+# 1   1     1
+
+# Truth Table for Bitwise OR (|)
+# A   B   A | B
+# 0   0     0
+# 0   1     1
+# 1   0     1
+# 1   1     1
+
+# Truth Table for Bitwise XOR (^)
+# A   B   A ^ B
+# 0   0     0
+# 0   1     1
+# 1   0     1
+# 1   1     0
 
 print(p & q)    # Bitwise AND: 1 (0001)
 print(p | q)    # Bitwise OR: 7 (0111)
 print(p ^ q)    # Bitwise XOR: 6 (0110)
-print(~p)       # Bitwise NOT: -6
-print(p << 1)   # Left shift: 10 (1010)
-print(p >> 1)   # Right shift: 2 (0010)
+print(~p)       # Bitwise NOT: -6 (Inverts all bits, 2's complement)
+print(p << 1)   # Left shift: 10 (1010) = 5 * 2
+print(p >> 1)   # Right shift: 2 (0010) = 5 // 2
+
+# -------------------------------
+# 🔄 Typecasting
+# -------------------------------
+
+# Converting int to float
+a = 5
+print(float(a))     # Output: 5.0
+
+# Converting float to int
+b = 6.9
+print(int(b))       # Output: 6 (decimal part is truncated)
+
+# Converting int to string
+x = 10
+print(str(x))       # Output: '10'
+
+# Converting string to int
+s = "123"
+print(int(s))       # Output: 123
+
+# Converting string to float
+f = "3.14"
+print(float(f))     # Output: 3.14
+
+# Converting boolean to int
+print(int(True))    # Output: 1
+print(int(False))   # Output: 0
+
+# Converting int to boolean
+print(bool(0))      # Output: False
+print(bool(5))      # Output: True
