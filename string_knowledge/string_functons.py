@@ -78,3 +78,112 @@ print(s26.split())  # Splits string by spaces into a list of words
 
 s27 = input("Input a string to encode into bytes: ")
 print(s27.encode())  # Encodes string into bytes using UTF-8
+
+#---------------------Some Examples-----------------------------#
+# 1. endswith()
+s1 = "playing"
+print(s1.endswith('ing'))  # True
+
+# 2. startswith()
+s2 = "apple"
+print(s2.startswith('a'))  # True
+
+# 3. capitalize()
+s3 = "hello world"
+print(s3.capitalize())  # "Hello world"
+
+# 4. upper()
+s4 = "good morning"
+print(s4.upper())  # "GOOD MORNING"
+
+# 5. lower()
+s5 = "HELLO"
+print(s5.lower())  # "hello"
+
+# 6. isdigit()
+s6 = "12345"
+print(s6.isdigit())  # True
+
+# 7. isalpha()
+s7 = "Hello"
+print(s7.isalpha())  # True
+
+# 8. isalnum()
+s8 = "abc123"
+print(s8.isalnum())  # True
+
+# 9. istitle()
+s9 = "This Is Title"
+print(s9.istitle())  # True
+
+# 10. title()
+s10 = "python programming"
+print(s10.title())  # "Python Programming"
+
+# 11. isupper()
+s11 = "HELLO"
+print(s11.isupper())  # True
+
+# 12. islower()
+s12 = "hello"
+print(s12.islower())  # True
+
+# 13. strip()
+s13 = "  hello world  "
+print(s13.strip())  # "hello world"
+
+# 14. lstrip()
+s14 = "   left space"
+print(s14.lstrip())  # "left space"
+
+# 15. rstrip()
+s15 = "right space   "
+print(s15.rstrip())  # "right space"
+
+# 16. replace()
+s16 = "banana"
+print(s16.replace('a', 'A'))  # "bAnAnA"
+
+# 17. count()
+s17 = "apple apple apple"
+print(s17.count('apple'))  # 3
+
+# 18. find()
+s18 = "elephant"
+print(s18.find('e'))  # 0 (first 'e' at index 0)
+
+# 19. center()
+s19 = "python"
+print(s19.center(20))  # "       python       "
+
+# 20. swapcase()
+s20 = "HeLLo WoRLd"
+print(s20.swapcase())  # "hEllO wOrlD"
+
+# 21. isspace()
+s21 = "   "
+print(s21.isspace())  # True
+
+# 22. isprintable()
+s22 = "Hello\nWorld"
+print(s22.isprintable())  # False (because \n is not printable)
+
+# 23. isidentifier()
+s23 = "my_variable"
+print(s23.isidentifier())  # True
+
+# 24. join()
+s24 = ["one", "two", "three"]
+print("-".join(s24))  # "one-two-three"
+
+# 25. partition()
+s25 = "hello world python"
+print(s25.partition(" "))  # ('hello', ' ', 'world python')
+
+# 26. split()
+s26 = "split these words"
+print(s26.split())  # ['split', 'these', 'words']
+
+# 27. encode()
+s27 = "hello"
+print(s27.encode())  # b'hello'
