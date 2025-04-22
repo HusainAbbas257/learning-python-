@@ -14,7 +14,7 @@ list[4] = True
 print(list)
 # prints ---> ['python', 'is', 'fun', 'its', True]
 
-#-----------list-methods-------------#
+##-----------list-methods-------------#
 
 # 1. sort() -> sorts the list (in place)
 l1 = [45, 365, 2, 72, 6, 14, 754, 26]
@@ -23,100 +23,78 @@ l1.sort()
 print("after sorting -->", l1)
 
 # 2. append() -> adds one element at the end
-l3 = [1, 2, 3]
-print("before appending -->", l3)
-l3.append(4)
-print("after appending 4 -->", l3)
+l2 = [1, 2, 3]
+l2.append(4)
+print("after appending 4 -->", l2)
 
-# 3. extend() -> adds elements from another iterable (like list) to the current list
-l4 = [10, 20]
-l4.extend([30, 40])
-print("after extending with [30, 40] -->", l4)
+# 3. extend() -> adds multiple elements
+l3 = [10, 20]
+l3.extend([30, 40])
+print("after extending with [30, 40] -->", l3)
 
-# 4. insert(index, value) -> inserts element at specific index
-l5 = ["a", "b", "d"]
-l5.insert(2, "c")
-print("after inserting 'c' at index 2 -->", l5)
+# 4. insert(index, value)
+l4 = ["a", "b", "d"]
+l4.insert(2, "c")
+print("after inserting 'c' -->", l4)
 
-# 5. remove(value) -> removes first occurrence of value
-l6 = [1, 2, 3, 2, 4]
-l6.remove(2)
-print("after removing first occurrence of 2 -->", l6)
+# 5. remove(value)
+l5 = [1, 2, 2, 3]
+l5.remove(2)
+print("after removing 2 -->", l5)
 
-# 6. pop([index]) -> removes and returns element at index (last if not given)
-l7 = ["x", "y", "z"]
-item = l7.pop()
-print("after popping last element -->", l7, "popped:", item)
-item2 = l7.pop(0)
-print("after popping index 0 -->", l7, "popped:", item2)
+# 6. pop()
+l6 = ["x", "y", "z"]
+print("popped element:", l6.pop())
+print("after pop -->", l6)
 
-# 7. clear() -> removes all elements from list
-l8 = [100, 200, 300]
-l8.clear()
-print("after clearing list -->", l8)
+# 7. clear()
+l7 = [1, 2, 3]
+l7.clear()
+print("after clear -->", l7)
 
-# 8. index(value) -> returns first index of value
-l9 = ["apple", "banana", "cherry"]
-i = l9.index("banana")
-print("index of 'banana' -->", i)
+# 8. index(value)
+l8 = ["apple", "banana", "cherry"]
+print("index of banana -->", l8.index("banana"))
 
-# 9. count(value) -> returns count of how many times value appears
-l10 = [1, 2, 2, 3, 2, 4]
-cnt = l10.count(2)
-print("count of 2 in list -->", cnt)
+# 9. count(value)
+l9 = [1, 2, 2, 3, 2]
+print("count of 2 -->", l9.count(2))
 
-# 10. reverse() -> reverses the list in place
-l11 = [1, 2, 3, 4]
-l11.reverse()
-print("after reversing -->", l11)
+# 10. reverse()
+l10 = [1, 2, 3]
+l10.reverse()
+print("after reverse -->", l10)
 
-# 11. copy() -> returns a shallow copy of the list
-l12 = ["copy", "me"]
-l13 = l12.copy()
-l13.append("new")
-print("original list -->", l12)
-print("copied and modified list -->", l13)
+# 11. copy()
+l11 = [100, 200]
+l12 = l11.copy()
+l12.append(300)
+print("original -->", l11)
+print("copy with change -->", l12)
 
-# 12. len() -> not a method but a built-in function to get length
-length = len(l13)
-print("length of l13 -->", length)
+# 12. slicing
+lst = [10, 20, 30, 40, 50, 60, 70]
+print("slice [2:5] -->", lst[2:5])
+print("slice [::2] (skip 1) -->", lst[::2])
+print("slice [-3:] (last 3 items) -->", lst[-3:])
 
-# 13. sorted() -> returns a new sorted list (original stays unchanged)
-l14 = [5, 2, 9, 1]
-l15 = sorted(l14)
-print("original list -->", l14)
-print("sorted copy -->", l15)
-
-# 14. max() / min() -> gives largest / smallest element
-nums = [10, 55, 32, 89]
-print("maximum number -->", max(nums))
-print("minimum number -->", min(nums))
-
-# 15. sum() -> adds up all numeric elements
-print("sum of nums -->", sum(nums))
-
-
-#------------------sample output-----------#
+#--------------------sample-output-------------------------#
 # ['this is a', 'list', 123, 3.14, False]
 # ['python', 'is', 'fun', 'its', True]
 # before sorting --> [45, 365, 2, 72, 6, 14, 754, 26]
 # after sorting --> [2, 6, 14, 26, 45, 72, 365, 754]
-# before appending --> [1, 2, 3]
 # after appending 4 --> [1, 2, 3, 4]
 # after extending with [30, 40] --> [10, 20, 30, 40]
-# after inserting 'c' at index 2 --> ['a', 'b', 'c', 'd']
-# after removing first occurrence of 2 --> [1, 3, 2, 4]
-# after popping last element --> ['x', 'y'] popped: z
-# after popping index 0 --> ['y'] popped: x
-# after clearing list --> []
-# index of 'banana' --> 1
-# count of 2 in list --> 3
-# after reversing --> [4, 3, 2, 1]
-# original list --> ['copy', 'me']
-# copied and modified list --> ['copy', 'me', 'new']
-# length of l13 --> 3
-# original list --> [5, 2, 9, 1]
-# sorted copy --> [1, 2, 5, 9]
-# maximum number --> 89
-# minimum number --> 10
-# sum of nums --> 186
+# after inserting 'c' --> ['a', 'b', 'c', 'd']
+# after removing 2 --> [1, 2, 3]
+# popped element: z
+# after pop --> ['x', 'y']
+# after clear --> []
+# index of banana --> 1
+# count of 2 --> 3
+# after reverse --> [3, 2, 1]
+# original --> [100, 200]
+# copy with change --> [100, 200, 300]
+# slice [2:5] --> [30, 40, 50]
+# slice [::2] (skip 1) --> [10, 30, 50, 70]
+# slice [-3:] (last 3 items) --> [50, 60, 70]
