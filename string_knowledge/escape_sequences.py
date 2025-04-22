@@ -43,4 +43,3 @@ print("\x48\x49")  # Output: HI (hex 48 = H, 49 = I)
 
 # Note: Some of these may look different in online IDEs or editors
 # Always best to try them in a terminal or text-based interface for exact effect
-git 
