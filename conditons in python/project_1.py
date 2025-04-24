@@ -129,3 +129,79 @@ elif score >= 5:
     print("Good job! Keep reading the news.")
 else:
     print("You need to stay more updated!")
+
+#-----------sample output-------------#
+# Welcome to the Indian Current Affairs Quiz!
+
+# Q1: Who is the current President of India?
+# a) Droupadi Murmu
+# b) Ram Nath Kovind
+# c) Narendra Modi
+# Your answer: a
+# Correct!
+
+# Q2: What is the capital of Ladakh?
+# a) Srinagar
+# b) Leh
+# c) Kargil
+# Your answer: b
+# Correct!
+
+# Q3: Who is the current Chief Election Commissioner of India?
+# a) Rajiv Kumar
+# b) Sushil Chandra
+# c) Sunil Arora
+# Your answer: a
+# Correct!
+
+# Q4: In which year did Chandrayaan-3 land on the Moon?
+# a) 2022
+# b) 2023
+# c) 2024
+# Your answer: c
+# Wrong! Correct answer: b) 2023
+
+# Q5: Which city hosted the G20 Summit 2023?
+# a) New Delhi
+# b) Mumbai
+# c) Bengaluru
+# Your answer: a
+# Correct!
+
+# Q6: Who is the current Chief Minister of Uttar Pradesh?
+# a) Akhilesh Yadav
+# b) Mayawati
+# c) Yogi Adityanath
+# Your answer: c
+# Correct!
+
+# Q7: Which team won the IPL 2023?
+# a) Gujarat Titans
+# b) Chennai Super Kings
+# c) Mumbai Indians
+# Your answer: b
+# Correct!
+
+# Q8: Which river is being cleaned under the 'Namami Gange' project?
+# a) Yamuna
+# b) Narmada
+# c) Ganga
+# Your answer: b
+# Wrong! Correct answer: c) Ganga
+
+# Q9: Who is the current RBI Governor?
+# a) Urjit Patel
+# b) Shaktikanta Das
+# c) Raghuram Rajan
+# Your answer: c
+# Wrong! Correct answer: b) Shaktikanta Das
+
+# Q10: Which city recently got India’s first underwater metro?
+# a) Mumbai
+# b) Kolkata
+# c) Chennai
+# Your answer: b
+# Correct!
+
+# Your final score is: 7 / 10
+# Good job! Keep reading the news.
