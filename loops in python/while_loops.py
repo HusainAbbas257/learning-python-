@@ -38,3 +38,16 @@ while(i<len(list)):
     print(list[i])
     i+=1
 
+#while can be used to iterate over tuples for examples:
+my_tuple = ('apple', 'banana', 'cherry')
+i = 0
+while i < len(my_tuple):
+    print(my_tuple[i])
+    i += 1
+
+#while can be used to iterate over strings for examples:
+my_string = "hello"
+i = 0
+while i < len(my_string):
+    print(my_string[i])
+    i += 1

@@ -8,11 +8,11 @@ print(type(t2))
 print(type(t3))
 print(type(t4))
 
-#unlike lists it is immutable
+#unlike s it is immutable
 # t2(0)=3 #gives error beacuse tuples are immutable ie cannot be changed
 
 #--------------tuple-methods---------------#
-#tuples have almost same methods as lists but they return a value so the must be called into any otheer tuple
+#tuples have almost same methods as s but they return a value so the must be called into any otheer tuple
 
 # 1 index(value) -> returns first index of value
 t5 = ("apple", "banana", "cherry")
@@ -30,7 +30,7 @@ print("count of 2 in tuple -->", cnt)
 length = len(t6)
 print("length of t6 -->", length)
 
-# 4. sorted() -> returns a new sorted list (original stays unchanged) and it can be converted into a tuple
+# 4. sorted() -> returns a new sorted tuple (original stays unchanged) and it can be converted into a tuple
 t7 = (5, 2, 9, 1)
 t8 = tuple(sorted(t7))
 print("original tuple -->", t7)
