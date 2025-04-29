@@ -74,3 +74,14 @@ for i in range(6):
     print(" "*i+"*"*(5-i)+"*"*(4-i))
 print()
 
+# 8.hollow cobe of length n
+# *****
+# *   *
+# *   *
+# *   *
+# *****
+n=5
+print("*"*n)
+for i in range(n-2):
+    print("*"+" "*(n-2)+"*")
+print("*"*n)
