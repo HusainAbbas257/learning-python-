@@ -21,3 +21,36 @@ s=f.read()
 print(s)
 f.close()
 
+#  next function is readlines() it returns a list consisting of each line of file from which it reads
+fn="helloworld.py"
+f=open(fn,"r")
+l=f.readlines()
+print(l)
+# this list can be combined to a single string as
+s=""
+for i in l:
+    s=s+i
+    
+print(s)
+f.close()
+
+# next function is readline() it print lines of the text untill its ended it returns "" an empty string
+fn="helloworld.py"
+f=open(fn,"r")
+l1=f.readline()
+print(l1)
+l2=f.readline()
+print(l2)
+f.close()
+# something can be appended in the end of the file in append mode
+fn="test.txt"
+f=open("test.txt","a")#a means append
+f.write("hey this is appended.")
+
+# with the above codes you can feel thew butrden of open and close .it has an alternative:with as statements
+fl=open("test.txt")
+print(fl.read())
+fl.close()
+
+with open("test.txt") as fl:
+    print(fl.read())
