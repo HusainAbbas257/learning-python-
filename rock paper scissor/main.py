@@ -1,7 +1,7 @@
-# step 1.
-# prepring a system for taking proper inputs in proper variables
+import random
 player_move=input("enter you choice(rock/paper/scissor):")
-comp_move="rock"
+comp_move=random.choice(["rock","paper","scissor"])
+print(f"computer chose:{comp_move}")
 WINNER='player'
 if(player_move=='rock'):
     if(comp_move=='rock'):
