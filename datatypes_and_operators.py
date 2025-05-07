@@ -23,6 +23,17 @@ print(n)            # Printing the value of 'n'
 
 print(type(n))      # Printing the data type of 'n' (which is <class 'NoneType'>)
 
+
+# you can also assign its datatype at the time of declaration as:
+name:str="husain abbas"
+print(name,type(name))#husain abbas <class 'str'>
+age:int=16
+print(age,type(age))#16 <class 'int'>
+pi:float=3.1415926535
+print(pi,type(pi))#16 <class 'int'>
+nothing:None=None
+print(nothing,type(nothing))#None <class 'NoneType'>
+
 # -------------------------------
 # ⚙️ Operators and Operands
 # -------------------------------
