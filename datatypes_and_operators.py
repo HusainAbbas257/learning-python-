@@ -123,6 +123,17 @@ print(p << 1)   # Left shift: 10 (1010) = 5 * 2
 print(p >> 1)   # Right shift: 2 (0010) = 5 // 2
 
 # -------------------------------
+# 🖐 Walrus Operator (:=)
+# -------------------------------
+
+# The walrus operator allows assignment within an expression
+n = 10
+if (val := n * 2) > 15:
+    print(f"Walrus value is {val}, which is greater than 15")
+# Output: Walrus value is 20, which is greater than 15
+
+
+# -------------------------------
 # 🔄 Typecasting
 # -------------------------------
 
