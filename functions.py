@@ -58,3 +58,12 @@ def average(num1=0,num2=0,num3=0,num4=0,num5=0):
     avg=sum/5
     return avg
 print(average(1,2,3,4,5))
+
+
+# arguments of a function as well as as its return can be given their datatype at the time of declaration as:
+a,b,c,d,e=int(input(f"enter 1st number:")),int(input(f"enter 2nd number:")),int(input(f"enter 3rd number:")),int(input(f"enter 4th number:")),int(input(f"enter 5th number:"))
+def average(num1:int=0,num2:int=0,num3:int=0,num4:int=0,num5:int=0) ->intf:#this will now return the value as an ineteger
+    sum=num1+num2+num3+num4+num5
+    avg=sum/5
+    return avg
+print(average(a,b,c,d,e))
