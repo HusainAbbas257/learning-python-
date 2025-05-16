@@ -62,8 +62,25 @@ print(average(1,2,3,4,5))
 
 # arguments of a function as well as as its return can be given their datatype at the time of declaration as:
 a,b,c,d,e=int(input(f"enter 1st number:")),int(input(f"enter 2nd number:")),int(input(f"enter 3rd number:")),int(input(f"enter 4th number:")),int(input(f"enter 5th number:"))
-def average(num1:int=0,num2:int=0,num3:int=0,num4:int=0,num5:int=0) ->intf:#this will now return the value as an ineteger
+def average(num1:int=0,num2:int=0,num3:int=0,num4:int=0,num5:int=0) ->int:#this will now return the value as an ineteger
     sum=num1+num2+num3+num4+num5
     avg=sum/5
     return avg
 print(average(a,b,c,d,e))
+
+#there are many times when a need of function with a variable number arguments is needed for such a case we use * before arguments name toconvert all the entered arguments into a list
+# example:
+def sum(*args:float)->float:
+    sum=0
+    for i in args:
+        sum+=i
+    return sum
+print(sum(1,2,3,4,5,6,7,8,9,10))
+
+# we use **before arguments name to make it a dictionary input with costum size.example
+
+def set(**kwargs):
+     print(kwargs)
+     for i in kwargs:
+       print(i)
+set(one=1,two=2,three=3)
