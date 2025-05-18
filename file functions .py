@@ -46,6 +46,7 @@ f.close()
 fn="test.txt"
 f=open("test.txt","a")#a means append
 f.write("hey this is appended.")
+f.close()
 
 # with the above codes you can feel thew butrden of open and close .it has an alternative:with as statements
 fl=open("test.txt")
@@ -54,3 +55,27 @@ fl.close()
 
 with open("test.txt") as fl:
     print(fl.read())
+
+# to just read from a perticular byte of the file we use seek() method 
+
+with open("helloworld.py",'r') as f:
+    f.seek(7)#starts reading from 7 th byte
+    print(f.read())# prints -->hello world")
+
+# to print only specific number of bytes we give the number of bytes as argument to read()
+with open("helloworld.py",'r') as f:
+    f.seek(7)#starts reading from 7 th byte
+    print(f.read(11))# prints -->hello world
+
+# to get the starting byte we use the tell() function as:
+with open("helloworld.py",'r') as f:
+    print(f.tell())# by default it has 0 as reading value
+    f.seek(7)#starts reading from 7 th byte
+    print(f.tell())#gives 7 as starting byte
+    
+# we can set the file size by using truncate(s) whre s is max size
+with open("test.txt",'w') as f:
+    f.write("this is the new code to be written in the test.txt")
+    f.truncate(10)  #this sets files max size to 10 bytes
+with open("test.txt",'r') as f:
+    print(f.read())#prints -->this is th
