@@ -79,3 +79,10 @@ with open("test.txt",'w') as f:
     f.truncate(10)  #this sets files max size to 10 bytes
 with open("test.txt",'r') as f:
     print(f.read())#prints -->this is th
+
+# when you want to reead and write in a same block then u can use multiple open in single with as
+with (
+    open("helloworld.py",'r') as fr,
+    open("test.txt",'w') as fw
+):
+    fw.write(fr.read())

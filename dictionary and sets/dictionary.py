@@ -12,6 +12,11 @@ print(type(d4))
 # keys are unique and immutable (strings, numbers, etc)
 # values can be anything
 
+# two or more dictionaries can be merged be | operater
+dict1={"one":1,"two":2}
+dict2={"three":3,'four':4}
+newdict=dict1|dict2#merges both dictionaries
+print(newdict)#{'one': 1, 'two': 2, 'three': 3, 'four': 4}
 #--------------dictionary-methods---------------#
 
 # 1. get(key) -> returns value if key exists, else returns None
@@ -64,6 +69,7 @@ print("after clear -->", sample)
 # <class 'dict'>
 # <class 'dict'>
 # <class 'dict'>
+# {'one': 1, 'two': 2, 'three': 3, 'four': 4}
 # get name --> Bob
 # get age (not present) --> None
 # keys --> dict_keys(['name', 'country'])
