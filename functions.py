@@ -84,3 +84,10 @@ def set(**kwargs):
      for i in kwargs:
        print(i)
 set(one=1,two=2,three=3)
+
+#while handling large complex programs sometimes we need some one line methods .
+# these are called lambda functions:
+square=lambda x:x*x     #it takes argument x and return x*x 
+print(square(5))        #lambda functions are  called in a same way as the normal functions
+
+
