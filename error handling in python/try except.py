@@ -100,3 +100,13 @@ except Exception as e:
     print("an error occured:",e)
 else:
     print("no error occured.answer=",(num*num))
+
+# if you want to make sure a specific block must execute always no matter an error occurs or not
+try:
+    num=int(input("enter a number to get its square:"))
+except Exception as e:
+    print("an error occured:",e)
+else:
+    print("no error occured.answer=",(num*num))
+finally:
+    print("this will always execute")
