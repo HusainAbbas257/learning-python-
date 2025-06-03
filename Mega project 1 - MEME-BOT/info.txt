@@ -1,0 +1,14 @@
+meme-bot/
+│
+├── logs/                     # contains the data of what posted and what created etc.
+├── memes/                    # Folder containing downloaded meme images from Reddit API
+├── music/                    # Folder containing background music files
+├── videos/                   # Generated meme videos stored here
+├── Free-Chatbot-Api          # jugad to use a chatbot for free
+├── create_video.py           # Creates video from memes + music, avoids repeating memes
+├── instagram_post.py         # Handles posting videos and replies on Instagram
+├── scheduler.py              # Schedules video creation + posting + auto reply tasks
+├── reddit_scraper.py         # Reddit API module to fetch memes, ensures no duplicates by checking logs
+├── requirements.txt          # Python dependencies including moviepy, praw, instabot, openai (or similar)
+└── info.txt                  # This file: basic project structure and feature overview
+
