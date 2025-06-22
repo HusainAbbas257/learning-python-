@@ -45,3 +45,4 @@ Unlike other Mega projects that i did i will commit it daily and write each comm
     2.built main.py to display the actual screen of the app and options that can be utilised.
     3.started with tools and built calculator.py
     4.Made two games : number guessing,rock paper scissor
+    5.made 2 tools:unit_converter.py and password_manager.py
