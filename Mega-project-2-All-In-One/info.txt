@@ -6,29 +6,29 @@ And after making all of them i will give them some gui and a name :"The All In O
 
 here is the list :
     a.games:
-        1.  Number Guessing Game - Random number generation and loops
-        2.  Rock Paper Scissors - Game logic and user input
-        3.  Mad Libs Generator - String formatting
-        4.  Dice Rolling Simulator - Random events
+        1.  Number Guessing Game - Random number generation and loops✔
+        2.  Rock Paper Scissors - Game logic and user input✔
+        3.  Mad Libs Generator - String formatting✔
+        4.  Dice Rolling Simulator - Random events✔
         5.  Hangman Game - Advanced string manipulation and game state
         6.  Tic-Tac-Toe with AI - Game theory and basic AI
         7.  Text-based Adventure Game - Complex branching logic
         8.  simple quiz game
         9.  Basic Paint Program (Tkinter) - Graphics and event handling
-        10. coin toss simulation
+        10. coin toss simulation✔
         11. i can guess what you think number edition
         12. Funny answer maker
         13. word jumble
-        14. Simple Slot Machine
+        14. Simple Slot Machine✔
         15. Simple Typing Speed Test
     b.tools:
-        1   Calculator - Basic arithmetic operations
-        2.	unit Converter - all kind of units to be converted
-        3.	Password Generator - Random string generation
+        1   Calculator - Basic arithmetic operations✔
+        2.	unit Converter - all kind of units to be converted✔
+        3.	Password Generator - Random string generation✔
         4.	Simple To-Do List - Lists and basic CRUD operations
         5.	Contact Book - File handling and data persistence
         6.	Expense Tracker - Financial data management
-        7.	Password Manager - Encryption and security basics
+        7.	Password Manager - Encryption and security basics✔
         8.	Weather App (Requests) - API integration and JSON handling
         9.	Currency Converter (Requests) - Real-time data fetching
         10.	News Aggregator (BeautifulSoup + Requests) - Multi-source data compilation
@@ -46,3 +46,4 @@ Unlike other Mega projects that i did i will commit it daily and write each comm
     3.started with tools and built calculator.py
     4.Made two games : number guessing,rock paper scissor
     5.made 2 tools:unit_converter.py and password_manager.py
+    6.made a cool simulation program and a mad-libs that answers in strange fun stories.(after a long time i am commiting)
